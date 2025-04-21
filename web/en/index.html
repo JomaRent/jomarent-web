@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JOMA RENT</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: white;
+    }
+    header {
+      background-color: orange;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    nav {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .contact-btn {
+      background-color: white;
+      color: orange;
+      padding: 0.6rem 1rem;
+      border: none;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+    .contact-btn:hover {
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transform: translateY(-2px);
+    }
+
+    .video-container {
+      margin-top: 70px;
+      height: 50vh;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero {
+      background-color: #f1f1f1;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .buttons {
+      margin-top: 1rem;
+    }
+
+    .hero-btn {
+      background-color: orange;
+      color: white;
+      padding: 1rem 2rem;
+      margin: 0 1rem;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .hero-btn:hover {
+      background-color: darkorange;
+    }
+
+    .about {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    #contact {
+      background-color: #f9f9f9;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    footer a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+      }
+      .contact-btn {
+        align-self: flex-end;
+        margin-top: 0.5rem;
+      }
+      .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div><strong>JOMA RENT</strong></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="machinery.html">Machinery</a>
+      <a href="locations.html">Locations</a>
+    </nav>
+    <a href="#contact" class="contact-btn">✉️ Get in touch with us</a>
+  </header>
+
+  <section class="video-container">
+    <video width="80%" height="100%" autoplay muted loop>
+      <source src="video-placeholder.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section class="hero">
+    <h1>Specialized Ramming Machine Rental</h1>
+    <p>We supply top-tier pile driving equipment for solar installations across Europe.</p>
+    <div class="buttons">
+      <a href="machinery.html" class="hero-btn">View Our Machinery</a>
+      <a href="locations.html" class="hero-btn">Locations</a>
+    </div>
+  </section>
+
+  <section class="about">
+    <h2>About JOMA RENT</h2>
+    <p>JOMA RENT offers reliable and highly specialized pile-driving machines for solar energy projects. Our fleet is designed to meet the highest demands in terms of efficiency, transportability and durability.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Get in Touch</h2>
+    <p>If you have any questions or want to request a quote, feel free to contact us.</p>
+    <form action="https://formspree.io/f/mwkgrzoj" method="POST" style="max-width: 600px; margin: 2rem auto;">
+      <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 1rem; margin-bottom: 1rem;">
+      <input type="email" name="email" placeholder="Your Email" required style="width: 100%; padding: 1rem; margin-bottom: 1rem;">
+      <textarea name="message" placeholder="Your Message" rows="6" required style="width: 100%; padding: 1rem; margin-bottom: 1rem;"></textarea>
+      <button type="submit" style="background-color: orange; color: white; font-weight: bold; padding: 1rem 2rem; border: none; cursor: pointer;">
+        Send Message
+      </button>
+      <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+      <br>
+    </form>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </section>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="legal.html">Legal Notice</a>
+    <a href="#contact">Contact</a>
+    <p>&copy; 2025 JOMA RENT. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
