@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting...</title>
+  <script>
+    const languageMap = {
+      'en': 'en', // English
+      'es': 'es', // Spanish
+      'fr': 'fr', // French
+      'it': 'it', // Italian
+      'de': 'de', // German
+      'pt': 'pt', // Portuguese
+      'hu': 'hu', // Hungarian
+      'el': 'el', // Greek
+      'pl': 'pl', // Polish
+      'sv': 'sv', // Swedish
+      'no': 'no'  // Norwegian
+    };
+
+    const userLang = navigator.language.slice(0, 2).toLowerCase();
+    const redirectTo = languageMap[userLang] || 'en';
+    window.location.href = `${redirectTo}/index.html`;
+  </script>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <p>Redirecting to your language version...</p>
+</body>
+</html>
