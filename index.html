@@ -1,81 +1,41 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JOMA RENT</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting...</title>
+  <script>
+    const languageMap = {
+      'en': 'en', // English
+      'es': 'es', // Spanish
+      'fr': 'fr', // French
+      'it': 'it', // Italian
+      'de': 'de', // German
+      'pt': 'pt', // Portuguese
+      'hu': 'hu', // Hungarian
+      'el': 'el', // Greek
+      'pl': 'pl', // Polish
+      'sv': 'sv', // Swedish
+      'no': 'no'  // Norwegian
+    };
+
+    const userLang = navigator.language.slice(0, 2).toLowerCase();
+    const redirectTo = languageMap[userLang] || 'en';
+    window.location.href = `${redirectTo}/index.html`;
+  </script>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      color: #555;
+    }
+  </style>
 </head>
-<body class="bg-white text-gray-800">
-  <header class="flex items-center justify-between p-4 shadow-md sticky top-0 bg-white z-10">
-    <div class="text-2xl font-bold text-yellow-500">JOMA RENT</div>
-    <nav class="space-x-4 hidden md:block">
-      <a href="#home" class="hover:text-yellow-500">Inicio</a>
-      <a href="#hincadoras" class="hover:text-yellow-500">Hincadoras</a>
-      <a href="#cobertura" class="hover:text-yellow-500">Cobertura</a>
-      <a href="#nosotros" class="hover:text-yellow-500">Sobre JOMA</a>
-      <a href="#contacto" class="hover:text-yellow-500">Contacto</a>
-    </nav>
-  </header>
-
-  <section id="home" class="h-[80vh] bg-yellow-100 flex items-center justify-center text-center p-6">
-    <div>
-      <h1 class="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-        Alquiler de hincadoras para proyectos solares en toda Europa
-      </h1>
-      <p class="mb-6 text-lg text-gray-700">
-        Especialistas en maquinaria para instalaciones fotovoltaicas a gran escala
-      </p>
-      <a href="#contacto" class="px-6 py-3 bg-yellow-500 text-white rounded-full font-semibold hover:bg-yellow-600">
-        Solicita información
-      </a>
-    </div>
-  </section>
-
-  <section id="hincadoras" class="py-16 px-6 bg-white">
-    <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">Nuestra maquinaria</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div class="border p-4 rounded-xl shadow hover:shadow-lg transition">
-        <img src="https://via.placeholder.com/400x250" alt="Hincadora" class="mb-4 rounded" />
-        <h3 class="text-xl font-semibold text-gray-800">Hincadora Modelo X</h3>
-        <p class="text-gray-600 mt-2">Ideal para terrenos duros, alta precisión y rendimiento continuo.</p>
-        <a href="#contacto" class="mt-4 inline-block text-yellow-600 hover:underline">Solicitar esta máquina</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="cobertura" class="py-16 px-6 bg-yellow-50">
-    <h2 class="text-3xl font-bold text-center mb-8 text-gray-900">Cobertura geográfica</h2>
-    <p class="text-center text-gray-700 max-w-2xl mx-auto">
-      Estamos presentes en toda Europa. Nuestra logística nos permite entregar maquinaria especializada en cualquier punto del continente.
-    </p>
-    <div class="mt-8 text-center">
-      <img src="https://via.placeholder.com/600x350" alt="Mapa de Europa" class="mx-auto rounded shadow" />
-      <p class="mt-4 text-sm text-gray-500">* Mapa interactivo disponible próximamente</p>
-    </div>
-  </section>
-
-  <section id="nosotros" class="py-16 px-6 bg-white">
-    <h2 class="text-3xl font-bold text-center mb-8 text-gray-900">Sobre JOMA</h2>
-    <p class="max-w-3xl mx-auto text-center text-gray-700">
-      En JOMA RENT nos especializamos en el alquiler de hincadoras para el sector solar fotovoltaico. Con años de experiencia en obra civil y proyectos energéticos a gran escala, ofrecemos soluciones técnicas adaptadas a las necesidades del cliente en toda Europa.
-    </p>
-  </section>
-
-  <section id="contacto" class="py-16 px-6 bg-yellow-100">
-    <h2 class="text-3xl font-bold text-center mb-8 text-gray-900">Contacto</h2>
-    <form class="max-w-2xl mx-auto space-y-4">
-      <input type="text" placeholder="Nombre" class="w-full border p-3 rounded" />
-      <input type="email" placeholder="Correo electrónico" class="w-full border p-3 rounded" />
-      <textarea placeholder="Mensaje" class="w-full border p-3 rounded h-32"></textarea>
-      <button class="bg-yellow-500 text-white px-6 py-3 rounded hover:bg-yellow-600">
-        Enviar mensaje
-      </button>
-    </form>
-  </section>
-
-  <footer class="bg-gray-800 text-white p-6 text-center">
-    <p>&copy; 2024 JOMA RENT. Todos los derechos reservados.</p>
-  </footer>
+<body>
+  <p>Redirecting to your language version...</p>
 </body>
 </html>
